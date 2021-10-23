@@ -7,11 +7,9 @@ import styles from './styles.module.scss';
 
 
 export function LoginBox(){
-  const { signInUrl, user } = useContext(AuthContext);
-
-  console.log(user);
+  const { signInUrl } = useContext(AuthContext);
   
-  return(
+  return (
     <div className={styles.loginBoxWrapper}>
       <strong>Entre e compartilhe sua mensagem</strong>
       <a href={signInUrl} className={styles.signInWithGithub} > 
